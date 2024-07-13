@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise Flower</title>
+    <style>
+        body {
+            background-color: coral;
+            background-blend-mode: soft-light;
+            -webkit-text-fill-color: darkred;
+            text-align: center;
+            font-family: cursive, sans-serif;
+            margin-top: 50px;
+        }
+        #flower {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click the button to see a flower!</h1>
+    <button onclick="showFlower()">Show Flower</button>
+    <div id="flower">
+        <img src="https://img.freepik.com/free-photo/beautiful-rose-outdoors_23-2150851069.jpg?t=st=1720867688~exp=1720871288~hmac=fa330ee62abbf30766660f52569b2914705fd9d29d3cae61fc3af27e6e895ea6&w=996" alt="Flower" width="300">
+    </div>
+
+    <script>
+        function showFlower() {
+            document.getElementById('flower').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
